@@ -16,14 +16,31 @@
     line-height: 1.2;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    animation: fromLeft 2s ease forwards;
 }
 
-.about-section p{
+.about-section .pp{
     color: #767676;
     font-family: Mulish,sans-serif;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
+    animation: fromLeft 2s ease forwards;
+}
+
+.about-section .social{
+    animation: fromLeft 2s ease forwards;
+}
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .about-section .hero-img {
@@ -39,6 +56,24 @@
     position: relative;
     transition: all 1s ease-in-out;
     width: 25rem;
+    animation: fromRight 2s ease forwards;
+}
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-section .tech-stack{
+    color: #023e8a;
+    font-weight: 600;
+    font-family: Poppins,sans-serif;
 }
 
 .about-section .skills{
@@ -47,7 +82,19 @@
     color: #767676;
     display: flex;
     font-size: 1.7rem;
+    animation: fade 2.5s ease forwards;
 }
+
+@keyframes fade
+ {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .about-section .skills .logos{
     width: 100%;
 }

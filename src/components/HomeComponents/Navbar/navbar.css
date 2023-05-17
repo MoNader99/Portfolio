@@ -18,7 +18,20 @@ body{
     z-index: 9000;
     width: 95%;
     border-bottom: 1px solid black;
+    animation: fromUp 2s ease forwards;
 }
+
+@keyframes fromUp {
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 #CustomNavBar .navbar-brand{
     font-family: 'Pacifico', cursive;
