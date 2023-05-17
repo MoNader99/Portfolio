@@ -1,0 +1,16 @@
+body {
+    
+	margin: 0;
+	padding: 1.875rem;
+}
+
+.home-page{
+    background-color: #fcfaec;
+    height: 100vh;
+}
+
+.home-page .content{
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
