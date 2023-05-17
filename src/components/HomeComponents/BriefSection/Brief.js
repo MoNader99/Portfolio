@@ -6,8 +6,10 @@ const BriefSection = () => {
     <div className='brief-section '>
         <div className='content'>
             <div className='row'>
-                <div className='col-lg-5 col-sm-12'>
+                <div style={{position:"relative"}} className='col-lg-5 col-sm-12 images'>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="emoji" class="react-emoji"/>
                     <img src='https://img.freepik.com/premium-vector/laptop-coding-concept-web-developer-programming-laptop-screen-code-illustration_100456-1753.jpg' alt='nothing'/>
+                    <span className='rotating-img'><img src="https://stefantopalovicdev.vercel.app/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" alt="text"/></span>
                 </div>
                 <div className='col-lg-7 col-sm-12'>
                     <div class="text-side">

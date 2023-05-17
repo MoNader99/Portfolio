@@ -56,7 +56,6 @@
     position: relative;
     transition: all 1s ease-in-out;
     width: 25rem;
-    animation: fromRight 2s ease forwards;
 }
 
 @keyframes fromRight {

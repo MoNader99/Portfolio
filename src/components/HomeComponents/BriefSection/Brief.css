@@ -16,7 +16,7 @@
     margin-bottom: 20rem;
     padding: 0 15%;
 }
-.brief-section .content img{
+.brief-section .content .images img{
     border-radius: 5%;
     height: auto;
     width: 100%;
@@ -27,7 +27,7 @@
         margin-top: 5rem;
         padding: 0 10%;
     }
-    .brief-section .content img{
+    .brief-section .content .images img{
         border-radius: 5%;
         height: auto;
         width: 100%;
@@ -35,4 +35,35 @@
     .brief-section{
         margin: 0 1rem;
     }
+}
+.brief-section .content .images .rotating-img{
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -45px;
+    height: 8rem;
+    position: absolute;
+    right: 0px;
+    width: 8rem;
+}
+
+.brief-section .content .images .rotating-img img{
+    animation: rotate 9s linear infinite;
+    width: 8rem;
+}
+
+.react-emoji {
+    bottom: -5px;
+    position: absolute;
+    right: 40px;
+    width: 3rem!important;
+    z-index: 10;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
 }
