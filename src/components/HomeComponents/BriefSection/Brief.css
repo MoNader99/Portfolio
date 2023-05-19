@@ -51,12 +51,110 @@
     width: 8rem;
 }
 
-.react-emoji {
+.brief-section .react-emoji {
     bottom: -5px;
     position: absolute;
     right: 40px;
     width: 3rem!important;
     z-index: 10;
+}
+
+@media (max-width:995px) {
+    .brief-section .content .images .rotating-img{
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: -45px;
+        height: 7rem;
+        position: absolute;
+        right: 0px;
+        width: 7rem;
+    }
+    
+    .brief-section .content .images .rotating-img img{
+        animation: rotate 9s linear infinite;
+        width: 7rem;
+    }
+    
+    .brief-section .react-emoji {
+        bottom: -5px;
+        position: absolute;
+        right: 40px;
+        width: 2.1rem!important;
+        z-index: 10;
+    }
+}
+.brief-section .tech{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.brief-section .tech-stack{
+    color: #023e8a;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: Poppins,sans-serif;
+}
+
+.brief-section .skills{
+
+    align-items: center;
+    color: #767676;
+    display: flex;
+    font-size: 1.7rem;
+    animation: fade 2.5s ease forwards;
+
+}
+@media (max-width: 650px) {
+    .brief-section .tech{
+        max-width: 100%;
+        margin: 0 auto;
+    }    
+    .brief-section .skills{
+        align-items: center;
+        color: #767676;
+        display: flex;
+        font-size: 1.5rem;
+        animation: fade 2.5s ease forwards;
+    }
+}
+@keyframes fade
+ {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.brief-section .skills .logos{
+    width: 100%;
+}
+.brief-section .skills .logos ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.brief-section .skills .logos ul li{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+}
+
+.brief-section .skills .logos ul li img{
+    position: relative;
+    top:15%;
+    left:20%;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 @keyframes rotate {

@@ -69,59 +69,6 @@
     }
 }
 
-.about-section .tech-stack{
-    color: #023e8a;
-    font-weight: 600;
-    font-family: Poppins,sans-serif;
-}
-
-.about-section .skills{
-
-    align-items: center;
-    color: #767676;
-    display: flex;
-    font-size: 1.7rem;
-    animation: fade 2.5s ease forwards;
-}
-
-@keyframes fade
- {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
-.about-section .skills .logos{
-    width: 100%;
-}
-.about-section .skills .logos ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-.about-section .skills .logos ul li{
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
-    cursor: pointer;
-    height: 4rem;
-    width: 4rem;
-}
-
-.about-section .skills .logos ul li img{
-    position: relative;
-    top:15%;
-    left:20%;
-    height: 2.5rem;
-    width: 2.5rem;
-}
 
 @keyframes morph {
     0% {
