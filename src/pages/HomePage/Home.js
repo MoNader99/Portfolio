@@ -8,12 +8,14 @@ const HomePage = () => {
   return (
     <div className='home-page'>
         <Navbar></Navbar>
-        <div className='content'>
+        <div id='home' style={{marginTop:'8rem'}} className='content '>
           <AboutSection></AboutSection>
         </div>
-        <div className='brief'>
+
+        <div id="about" className='brief'>
           <BriefSection></BriefSection>
         </div>
+
         <h1>dd</h1>
     </div>
   );
