@@ -1,5 +1,5 @@
 // import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import '../Navbar/navbar.css'
 
 const Navbar = () => {
@@ -14,16 +14,16 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ms-auto">
                 <li className="nav-item ">
-                    <Link className="nav-link" >Home</Link>
+                    <Link style={{cursor:"poitner!important"}} smooth={true} duration={200} offset={-100} to="home" className="nav-link" >Home</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" >About</Link>
+                    <Link smooth={true} duration={200} offset={-100} to="about" className="nav-link" >About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" >Projects</Link>
+                    <Link smooth={true} duration={200} offset={-100} to="Projects" className="nav-link" >Projects</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" >Contact</Link>
+                    <Link smooth={true} duration={200} offset={-100} to="Contact" className="nav-link" >Contact</Link>
                 </li>
                 </ul>
             </div>
