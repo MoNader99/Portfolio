@@ -22,6 +22,12 @@
     width: 100%;
 }
 
+@media (max-width:992px) {
+    .brief-section .content .text-side{
+        text-align: center ;
+    }
+}
+
 @media (max-width:775px) {
     .brief-section .content{
         margin-top: 5rem;
@@ -36,6 +42,7 @@
         margin: 0 1rem;
     }
 }
+
 .brief-section .content .images .rotating-img{
     background-color: #fff;
     border-radius: 50%;
@@ -59,30 +66,20 @@
     z-index: 10;
 }
 
-@media (max-width:995px) {
+@media (max-width:1488px) {
     .brief-section .content .images .rotating-img{
-        background-color: #fff;
-        border-radius: 50%;
-        bottom: -45px;
-        height: 7rem;
-        position: absolute;
-        right: 0px;
-        width: 7rem;
+        display: none;
     }
     
     .brief-section .content .images .rotating-img img{
-        animation: rotate 9s linear infinite;
-        width: 7rem;
+        display: none;
     }
     
     .brief-section .react-emoji {
-        bottom: -5px;
-        position: absolute;
-        right: 40px;
-        width: 2.1rem!important;
-        z-index: 10;
+        display: none;
     }
 }
+
 .brief-section .tech{
     max-width: 70%;
     margin: 0 auto;

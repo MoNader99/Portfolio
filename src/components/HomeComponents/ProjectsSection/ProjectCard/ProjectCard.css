@@ -1,0 +1,47 @@
+.project-card{
+    font-family: 'Poppins', sans-serif;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 0 0 8px #c5c5c5;
+    padding: 1rem;
+    min-height: 25rem;
+}
+.project-card .image .box{
+    background-position: top  !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24rem;;
+    width: 95%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #838383;
+    transition: ease-in 7s;
+}
+
+.project-card .image .box:hover{
+    background-position: bottom  !important;
+}
+
+.project-card .content .project-name{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.project-card .content .project-description{
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.project-card .content .github-button{
+    color: #2d2e32;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project-card .content .github-button:hover{
+    color: #007bff;
+}
+  
