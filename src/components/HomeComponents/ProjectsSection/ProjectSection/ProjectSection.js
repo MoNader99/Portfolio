@@ -15,7 +15,7 @@ function ProjectSection() {
                 {CardsInfo.map((project,index)=>{
                   return(
                     <div className="mb-3">
-                      <ProjectCard image={project.Iamge} title={project.Title} description={project.Description} technologies={project.Technologies} githubLink={project.GithubLink} liveDemoLink={project.LiveDemoLink} key={index}/>
+                      <ProjectCard image={project.Iamge} title={project.Title} description={project.Description} technologies={project.Technologies} githubLink={project.GithubLink} liveDemoLink={project.LiveDemoLink} Right={index%2===0?true:false} key={index}/>
                     </div>
                   )
                 })}

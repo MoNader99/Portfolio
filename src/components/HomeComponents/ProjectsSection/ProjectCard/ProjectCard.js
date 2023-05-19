@@ -132,12 +132,14 @@ const ProjectCard = (props) => {
   const [GithubLink, setGithubLink] = useState("");
   const [LiveDemoLink, setLiveDemoLink] = useState("");
 
+  const [orientation,setOrientation] = useState(true)
   useEffect(() => {
     setImage(props.image)
     setTitle(props.title)
     setDescription(props.description)
     setGithubLink(props.githubLink)
     setLiveDemoLink(props.liveDemoLink)
+    setOrientation(props.Right)
     const images = [];
     for (const item of data) {
       const { image, name } = item;
@@ -155,8 +157,11 @@ const ProjectCard = (props) => {
 
     return (
       <div className="project-card ">
-        <div className='row'>
-            <div style={{position:"relative"}} className='col-md-6 image'>
+        
+            {
+              orientation === true ? 
+              <div className='row'>
+              <div style={{position:"relative"}} className='col-md-6 image'>
                 <div style={{backgroundImage: Image }} className='box'>
                     
                 </div>
@@ -175,7 +180,6 @@ const ProjectCard = (props) => {
                       )   
                     })
                   }
-                  
                 </div>
                 
                 <div className='d-flex justify-content-around align-items-center '>
@@ -188,8 +192,44 @@ const ProjectCard = (props) => {
                 </div>
 
             </div>
+            </div>
+            :
+            <div className='row'>
+        <div className=' content col-md-6'>
+            <h4 className='project-name'>{Title}</h4>
+            <p className='project-description'>{Description}</p>
+            
+            <div className='d-flex justify-content-around align-items-center mb-5'>
+              {
+                Technologies.map((tech,index)=>{
+                  return(
+                  <li style={{color: 'white', width: '3rem'}}>
+                      <img src={tech} alt="technology"/>
+                  </li>
+                  )   
+                })
+              }
+            </div>
+            
+            <div className='d-flex justify-content-around align-items-center '>
+                <a className='github-button' target="_blank" href={GithubLink} rel="noreferrer">
+                   <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a className='github-button' target="_blank" href={LiveDemoLink} rel="noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i> Live Demo
+                  </a>
+            </div>
+
+            </div>
+
+            <div style={{position:"relative"}} className='col-md-6 image'>
+            <div style={{backgroundImage: Image }} className='box'>
+                
+            </div>
+            </div>
+            </div>
+            }
         </div>
-      </div>
     );
   }
 
